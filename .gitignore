@@ -1,0 +1,79 @@
+# ------------------------
+# Python
+# ------------------------
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+*.db
+*.env
+.venv/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ------------------------
+# VSCode / IDE
+# ------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------
+# Node / React frontend
+# ------------------------
+node_modules/
+dist/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ------------------------
+# Docker
+# ------------------------
+*.log
+docker-compose.override.yml
+*.pid
+*.swp
+*.sock
+
+# ------------------------
+# macOS / Windows
+# ------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------
+# Logs / temp
+# ------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# ------------------------
+# Terraform / infra
+# ------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# ------------------------
+# Kubernetes / Helm
+# ------------------------
+*.kube.yaml
+*.kube.yml
+*.secret.yaml

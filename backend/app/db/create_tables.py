@@ -1,7 +1,12 @@
 from app.db.base import Base
 from app.db.session import engine
-from app.models import mindmap, tag  # import all models
 
-# Create all tables
-Base.metadata.create_all(bind=engine)
-print("Tables created successfully")
+# Import models so they register with Base
+from app.models.mindmap import Mindmap
+
+def create_tables():
+    Base.metadata.create_all(bind=engine)
+    print("✅ Database tables created")
+
+if __name__ == "__main__":
+    create_tables()
